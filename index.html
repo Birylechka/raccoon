@@ -1,0 +1,73 @@
+﻿<html>
+     <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="raccoon.css">
+        <title>Raccoon</title>
+     </head>
+     
+<body>
+    <section id="sidebar-raccoon">
+        <!--Заголовок-->
+        <div class="header">
+            <div>
+                <h1 class="title">RACCOON</h1>
+            </div>
+        <!--Переключатель уровней: левая стрелка-уровень-правая стрелка-->
+        <div id="level-counter">
+
+            <span class="arrow left"  id="arrow left">
+            <span class="triangle"></span>
+            </span>
+
+            <span id="level-raccoon">
+              <span id="labelLevel">Уровень</span>
+              <span class="current" id="current">1</span>
+              <span id="labelOf" >из</span>
+              <span class="total">7</span>
+            </span>
+
+            <span class="arrow right"  id="arrow right">
+            <span class="triangle"></span>
+            </span>
+
+            <div id="levelsWrapper" class="tooltip">
+                <div id="levels"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Инструкции-->
+    <p id="instruction"></p>
+        <!--Панель для проверки кода-->
+        <div id="editor">
+            <div id="panelcode">
+                <div class="number">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br></div>
+                <pre id="upper"></pre>
+                <textarea id="code1"></textarea>
+                <pre id="down"></pre>
+            </div>
+        <!--Кнопка проверить-->
+            <button id="verify" class="verify">Проверить</button>
+         </div>
+    </section>
+
+<!--Экран для игры-->
+    <section id="view">
+        <div id="board">
+          <div id="field">
+          </div>
+          <div id="background">
+          </div>
+        </div>
+    </section>
+
+    <script src="raccoon.js" charset="UTF-8"></script>
+
+  <script type='text/javascript' charset="UTF-8">
+        window.onload = function() {
+        NextLevel();
+        func1();
+    }
+    </script>
+</body>
+</html>
